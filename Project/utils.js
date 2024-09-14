@@ -1,14 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.debugFactory = void 0;
-function debugFactory(_a) {
-    var _b = _a === void 0 ? {} : _a, _c = _b.actuallyLog, actuallyLog = _c === void 0 ? true : _c;
-    function debug(_) {
+exports.logFactory = void 0;
+function logFactory(_a) {
+    var _b = _a.outputLogs, outputLogs = _b === void 0 ? true : _b;
+    function log(_) {
         post(Array.prototype.slice.call(arguments).join(' '), '\n');
     }
-    if (!actuallyLog) {
+    if (!outputLogs) {
         return function () { };
     }
-    return debug;
+    return log;
 }
-exports.debugFactory = debugFactory;
+exports.logFactory = logFactory;
