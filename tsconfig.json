@@ -1,14 +1,15 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    "module": "CommonJS",
-    "target": "es5",
-    "strict": false,
-    "noImplicitAny": true,
     "allowUnreachableCode": true,
-    "sourceMap": false,
+    "ignoreDeprecations": "5.0",
     "lib": ["es5"],
-    "outDir": "Project"
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "outDir": "Project",
+    "sourceMap": false,
+    "strict": false,
+    "target": "es5"
   },
   "include": ["src/*.ts", "types/*.d.ts"]
 }
