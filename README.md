@@ -13,7 +13,7 @@ The container mounts the repo directory from the host read-write, and runs `tsc 
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and [VSCode](https://code.visualstudio.com/download) on your dev machine
 - Fork this repo
 - Clone the forked repo to your dev machine
-- - `cd` into the repo directory
+- `cd` into the repo directory
 - If you don't want to use VSCode, you can run `docker compose up` at this point and the watcher / transpiler will start. You can use the editor of your choice to edit files on your local machine.
 - If you DO want to use VSCode, then ensure the Dev Containers extension is added to VSCode
   ![Dev Containers Extension](images/devcontainers.png)
