@@ -11,10 +11,11 @@ The container mounts the repo directory from the host read-write, and runs `tsc 
 ## Getting Started
 
 - Install [Docker Desktop](https://www.docker.com/products/docker-desktop/) and [VSCode](https://code.visualstudio.com/download) on your dev machine
-- Ensure the Dev Containers extension is added to VSCode
-  ![Dev Containers Extension](images/devcontainers.png)
 - Fork this repo
 - Clone the forked repo to your dev machine
+- If you don't want to use VSCode, you can run `docker compose up` at this point and the watcher / transpiler will start. You can use the editor of your choice to edit files on your local machine.
+- If you DO want to use VSCode, then ensure the Dev Containers extension is added to VSCode
+  ![Dev Containers Extension](images/devcontainers.png)
 - `cd` into the repo directory and run:
   `code .`
 - This will open VSCode. It should prompt you to "Reopen in Container" once open. Click this to build the container (including installing dependencies listed in `yarn.lock`)
