@@ -2,6 +2,11 @@ autowatch = 1
 inlets = 1
 outlets = 1
 
+// NOTE: This section must appear in any .ts file that is directuly used by a
+// [js] or [jsui] object so that tsc generates valid JS for Max.
+const module = {}
+export = {}
+
 const config = {
   outputLogs: true,
 }
@@ -16,8 +21,3 @@ setinletassist(INLET_FOO, 'Description of Inlet')
 setoutletassist(OUTLET_FOO, 'Description of Outlet')
 
 log('reloaded')
-
-// NOTE: This section must appear in any .ts file that is directuly used by a
-// [js] or [jsui] object so that tsc generates valid JS for Max.
-const module = {}
-export = {}
